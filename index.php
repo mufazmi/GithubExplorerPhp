@@ -40,8 +40,10 @@ if(isset($_GET['q']))
 
     <div class="container">    
         <form action="" method="get" align="center">
-            <input type="text" name="q" id=""><br><br>
-            <input type="submit"class="btn black" style="height:50px; border-radius:50px;" name="" value="Search User" id="">
+            <div class="input-field">
+                <input type="text" name="q" id="username" placeholder="Search User" style="border: 3px solid black; border-radius:20px; padding:0px 10px 0px 10px;"><br>
+            </div>
+            <input type="submit"class="btn black" style="height:50px; border-radius:50px;" name="" value="Search User" id=""><br><br>
         </form>
     </div>
         
