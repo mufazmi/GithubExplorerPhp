@@ -39,12 +39,16 @@ if(isset($_GET['q']))
     </div>
 
     <div class="container">    
-        <form action="" method="get" align="center">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                    <form action="" method="get" align="center">
             <div class="input-field">
-                <input type="text" name="q" id="username" placeholder="Search User" style="border: 3px solid black; border-radius:20px; padding:0px 10px 0px 10px;"><br>
+                <input type="text" name="q" id="username" placeholder="Search User" style="border: 2px solid black; border-radius:20px; "><br>
             </div>
             <input type="submit"class="btn black" style="height:50px; border-radius:50px;" name="" value="Search User" id=""><br><br>
         </form>
+                    </div>
+                </div>
     </div>
         
         <div class="row">
