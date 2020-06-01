@@ -41,7 +41,6 @@ if(isset($_GET['q']))
     <body>
     <nav class="black">
     <a href="#" class="brand-logo">Github Explorer</a>
-
     </nav>
 
     <div class="center">
