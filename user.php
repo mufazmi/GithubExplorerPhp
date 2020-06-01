@@ -1,7 +1,7 @@
 <?php require_once('include/header.php') ?>
 
 <?php
-$domain1 = 'http://api.github.com/users/';
+$domain1 = 'http://api.github.com/users/SocialCodia';
 
 function get_http_response_code($domain1) {
   $headers = get_headers($domain1);
@@ -9,11 +9,13 @@ function get_http_response_code($domain1) {
 }
 $get_http_response_code = get_http_response_code($domain1);
 
-if ($get_http_response_code != 200 ) {
+if ($get_http_response_code != 301 ) {
+  echo $get_http_response_code;
     ?>
     <div class="center">
         <br><br>
         <i class="material-icons large">tag_faces</i>
+        
         <h1><b>Api Call Limit Exceeded </b></h1>
         <h3><b>For Your Ip <?php echo $_SERVER['REMOTE_ADDR']; ?></b></h3>
 
